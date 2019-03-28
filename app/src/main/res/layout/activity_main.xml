@@ -1,87 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DFBE6F"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_centerHorizontal="true"
         android:background="#f20"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="1"
         android:textSize="40sp"
-        android:id="@+id/textviewView1"
+        android:textColor="#ffff"
+        android:text="Top Content Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
-        android:layout_toRightOf="@id/textviewView1"
-        android:layout_below="@id/textviewView1"
-        android:background="#4ED877"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#B4B1B1"
         android:textSize="40sp"
-        android:id="@+id/textviewView2"
+        android:textColor="#ffff"
+        android:text="Bottom Content Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <TextView
-        android:layout_toRightOf="@id/textviewView2"
-        android:layout_below="@id/textviewView2"
-        android:background="#CCBE70"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="3"
-        android:textSize="40sp"
-        android:id="@+id/textviewView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_toRightOf="@id/textviewView3"
-        android:layout_below="@id/textviewView3"
-        android:background="#8155AC"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="4"
-        android:textSize="40sp"
-        android:id="@+id/textviewView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_toLeftOf="@id/textviewView4"
-        android:layout_below="@id/textviewView4"
-        android:background="#58564F"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="5"
-        android:textSize="40sp"
-        android:id="@+id/textviewView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_toLeftOf="@id/textviewView5"
-        android:layout_below="@id/textviewView5"
-        android:background="#99FFDB"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="6"
-        android:textSize="40sp"
-        android:id="@+id/textviewView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_toLeftOf="@id/textviewView6"
-        android:layout_below="@id/textviewView6"
-        android:background="#0D5F57"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="40dp"
-        android:text="7"
-        android:textSize="40sp"
-        android:id="@+id/textviewView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#3CBD4E"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:text="First"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:background="#1661A3"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:background="#C9A051"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:text="Three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
